@@ -1,26 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  @font-face {
+    font-family: "Junka-Regular";
+    src: url("/font/Jungka-Regular.otf") format(".otf");
   }
-  body {
-    color: white;
-    background: black;
+  @font-face {
+    font-family: "Junka-Bold";
+    src: url("/font/Jungka-Bold.otf") format(".otf");
+  }
+  @font-face {
+    font-family: "Junka-Medium-Regular";
+    src: url("/font/Jungka-Medium-Regular.otf") format(".otf");
+  }
+  @font-face {
+    font-family: "Junka-Book";
+    src: url("/font/Jungka-Book.otf") format(".otf");
   }
 }
